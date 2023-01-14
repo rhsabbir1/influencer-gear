@@ -1,48 +1,56 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.container{
+
+.container {
     width: 980px;
     margin: 0 auto;
     padding: 10px 0;
 }
+
 /* header section  */
 
-.menu-ber{
+.menu-ber {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
 }
-.nav-ber ul{
+
+.nav-ber ul {
     display: flex;
     align-items: center;
 }
-.nav-ber li{
+
+.nav-ber li {
     list-style: none;
     margin-right: 20px;
     font-size: 20px;
 }
 
-.header-section-content{
+.header-section-content {
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 90vh; */
     width: 980px;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 50px 0;
 }
-.header-title{
+
+.header-title {
     font-size: 50px;
 }
-.title{
+
+.title {
     font-size: 20px;
 }
-.header-btn{
+
+.header-btn {
     background-color: #da0c61;
     padding: 8px 20px;
     color: aliceblue;
@@ -51,41 +59,96 @@ body{
     margin-top: 25px;
 
 }
-.image img{
+
+.image img {
     width: 100%;
 }
+
 /* social-adds */
-.social-adds{
+.social-adds {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
 }
-.social-adds img{
+
+.social-adds img {
     width: 70px;
 }
 
+/* collection */
+.collection-section {
+    margin-top: 50px 0;
 
+}
+.products-items{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 10px;
+}
+.collection-title {
+    text-align: center;
+}
 
+.product {
+    width: 329px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
 
+.product img {
+    width: 300px;
+    height: 256px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
 
+.discription {
+    margin-left: 15px;
+}
+
+.discription h3 {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.discription p {
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 14px;
+}
 
 @media screen and (max-width:576px) {
-    .menu-ber{
+    .menu-ber {
         display: none;
     }
-    .container{
+
+    .container {
         width: 100%;
     }
-    .header-section-content{
+
+    .header-section-content {
         flex-direction: column;
         width: 100%;
         flex-direction: column-reverse;
         padding: 10px;
     }
-    .social-adds{
+
+    .heder-contant {
+        text-align: center;
+    }
+
+    .social-adds {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
+    .products-items{
+        grid-template-columns: repeat(1 ,1fr);
+        margin-left: 20px;
+    }
+
 }
