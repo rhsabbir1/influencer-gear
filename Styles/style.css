@@ -152,6 +152,18 @@ body {
     border: none;
 }
 
+footer{
+    height: 200px;
+    background-color: black;
+}
+.contant{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+}
+.contant p{
+    margin: 10px 0;
+}
 @media screen and (max-width:576px) {
     .menu-ber {
         display: none;
